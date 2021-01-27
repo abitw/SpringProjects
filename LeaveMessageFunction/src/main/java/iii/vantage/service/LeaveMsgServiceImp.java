@@ -2,6 +2,7 @@ package iii.vantage.service;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,12 @@ public class LeaveMsgServiceImp implements LeaveMsgService {
 	public MsgAddResp magAdd(MsgAddReq req) {
 		leaveMsgRepository.save(setLeaveMsgEntity(req)); // 存進資料庫
 		return setMsgAddResp(setLeaveMsgEntity(req)); // 回傳封裝成JSON的資料
+	}
+
+	@Override
+	public MsgAddResp msgFindByUserName(MsgAddReq req) {
+		List<LeaveMsgEntity> leaveMsgEntityList = null;
+		return null;
 	}
 
 	/**
@@ -51,4 +58,5 @@ public class LeaveMsgServiceImp implements LeaveMsgService {
 		msgAddResp.setLeaveTime(leaveMsgEntity.getLeaveTime());
 		return msgAddResp;
 	}
+
 }
