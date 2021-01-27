@@ -1,4 +1,4 @@
-package iii.vantage.repositity;
+package iii.vantage.pojo;
 
 import java.io.Serializable;
 

@@ -18,4 +18,6 @@ public class ApplyUserReq {
 
 	@JsonProperty(value = "PASSWORD")
 	private String password;
+
+
 }

@@ -12,11 +12,4 @@ public interface LeaveMsgService {
 	 * */
 	public MsgAddResp magAdd(MsgAddReq req);
 	
-	/**
-	 * 搜尋單筆留言
-	 * 
-	 * @param req /w Long id
-	 * @return
-	 * */
-	public MsgAddResp msgFindByUserName(MsgAddReq req);
 }

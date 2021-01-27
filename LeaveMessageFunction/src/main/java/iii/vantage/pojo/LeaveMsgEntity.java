@@ -1,4 +1,4 @@
-package iii.vantage.repositity;
+package iii.vantage.pojo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import lombok.Data;
+
 
 @Entity
 @Table(name="LEAVE_MSG")

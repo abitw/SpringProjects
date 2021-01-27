@@ -7,8 +7,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import iii.vantage.repositity.LeaveMsgEntity;
-import iii.vantage.repositity.LeaveMsgRepository;
+import iii.vantage.dao.LeaveMsgRepository;
+import iii.vantage.pojo.LeaveMsgEntity;
 import iii.vantage.vo.MsgAddReq;
 import iii.vantage.vo.MsgAddResp;
 
@@ -23,13 +23,7 @@ public class LeaveMsgServiceImp implements LeaveMsgService {
 		leaveMsgRepository.save(setLeaveMsgEntity(req)); // 存進資料庫
 		return setMsgAddResp(setLeaveMsgEntity(req)); // 回傳封裝成JSON的資料
 	}
-
-	@Override
-	public MsgAddResp msgFindByUserName(MsgAddReq req) {
-		List<LeaveMsgEntity> leaveMsgEntityList = null;
-		return null;
-	}
-
+	
 	/**
 	 * 前端JSON接到的資料從ApplyMemberReq存到MemberEntity
 	 * 

@@ -17,4 +17,6 @@ public class MsgAddResp {
 	
 	@JsonProperty(value ="LEAVE_TIME")
 	private Timestamp leaveTime;
+
+
 }

@@ -24,9 +24,4 @@ public class LeaveMsgController {
 		return leaveMsgService.magAdd(req);
 	} 
 	
-	@GetMapping(value="/findMsgById")
-	public MsgAddResp msgFindByUserName(@RequestParam MsgAddReq req) {
-		return leaveMsgService.msgFindByUserName(req);
-	}
-	
 }

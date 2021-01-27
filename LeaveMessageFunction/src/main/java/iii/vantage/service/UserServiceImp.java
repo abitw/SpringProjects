@@ -3,8 +3,8 @@ package iii.vantage.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import iii.vantage.repositity.UserEntity;
-import iii.vantage.repositity.UserRepository;
+import iii.vantage.dao.UserRepository;
+import iii.vantage.pojo.UserEntity;
 import iii.vantage.vo.ApplyUserReq;
 import iii.vantage.vo.ApplyUserResp;
 import iii.vantage.vo.UserInfoModifyReq;
