@@ -1,4 +1,4 @@
-package iii.vantage.pojo;
+package iii.vantage.po;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

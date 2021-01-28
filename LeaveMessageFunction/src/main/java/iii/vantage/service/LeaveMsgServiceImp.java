@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import iii.vantage.dao.LeaveMsgRepository;
-import iii.vantage.pojo.LeaveMsgEntity;
+import iii.vantage.po.LeaveMsgEntity;
 import iii.vantage.vo.MsgAddReq;
 import iii.vantage.vo.MsgAddResp;
 
